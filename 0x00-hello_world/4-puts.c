@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * program that prints a sentence
+ * main - Entry
+ * Return: ALways 0
  */
-int main()
+int main(void)
 {
-char hello_puts[] = "Programming is like building a multilingual puzzle";
+	char hello_puts[] = "Programming is like building a multilingual puzzle";
 puts(hello_puts);
-return 0;
+	return (0);
 }
