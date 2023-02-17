@@ -5,15 +5,10 @@
  */
 int main(void)
 {
-	int i;
-	double d;
-	float f;
-	char c;
 
-	printf("size of int :%lu. \n"sizeof(i));
-	printf("size of double :%lu. \n"sizeof(d));
-	printf("size of float :%lu. \n"sizeof(f));
-	printf("size of chat :%lu. \n"sizeof(c));
-
+	printf("size of int :%i. \n",sizeof(int));
+	printf("size of double :%i. \n",sizeof(double));
+	printf("size of float :%i. \n",sizeof(float));
+	printf("size of char :%i. \n",sizeof(char));
 	return (0);
 }
