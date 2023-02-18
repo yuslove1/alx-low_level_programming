@@ -1,9 +1,11 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+
 /**
- * main: Entry of the block
+ * main - Entry of the block
  * description - this code genarate random number
+ * Return: Always 0
  */
 int main(void)
 {
