@@ -5,11 +5,10 @@
 * Return: return 1 if c is uppercase and 0 otherwise
 */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-	int alpha;
 
-	if (alpha >= 'A' && alpha <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
