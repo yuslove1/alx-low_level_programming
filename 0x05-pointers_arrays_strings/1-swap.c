@@ -1,10 +1,16 @@
 #include "main.h"
+
 /**
-* rest_to_98 - this function updates value
-* @n: this parameter updating
+* swap_int - this function swap value
+* @a: parameter 1
+* @b: parameter 2
 * Return: void
 */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	*n = 98;
+	int f;
+	f = *a;
+
+	*a = *b;
+	*b = f;
 }
