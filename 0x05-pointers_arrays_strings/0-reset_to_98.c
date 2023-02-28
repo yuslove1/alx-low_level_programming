@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* rest_to_98 - this function updates value
-* @n: this parameter updating
+* reset_to_98 - This function updates value
+* @n: This parameter updating
 * Return: void
 */
 void reset_to_98(int *n)
