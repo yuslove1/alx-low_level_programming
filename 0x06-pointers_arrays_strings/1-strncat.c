@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strcat - Entry to the concate of two strings
@@ -8,7 +8,7 @@ include "main.h"
  * @n: bytes from src
  * Return: Return a pointer to the resulting dest
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int length_dest;
 	int length_src;
