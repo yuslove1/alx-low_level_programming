@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
  * _strcat - Entry to the concate of two strings
@@ -18,7 +18,8 @@ char *_strcat(char *dest, char *src, int n)
 		{
 			length_dest++;
 		}
-		for (length_src = 0; length_src < n && src[length_src] != '\0'; length_src++, length_dest++)
+		for (length_src = 0; length_src < n && src[length_src] != '\0';
+				length_src++, length_dest++)
 		{
 			dest[length_dest] = src[length_src];
 		}
