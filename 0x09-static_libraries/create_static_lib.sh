@@ -8,6 +8,6 @@ for file in *.c; do
   # Compile the .c file into an object file
   gcc -c "$file"
   # Add the object file to the library
-  ar rc liball.a "${file%.c}.o"
+  ar rcs liball.a "${file%.c}.o"
 
 done
