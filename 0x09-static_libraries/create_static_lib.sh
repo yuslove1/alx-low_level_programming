@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# create object file of all file end with .c
-gcc -c *.c
+# Create an empty archive file
+ar rcs liball.a
 
-# make static libarary will all the file end with .o
-ar -rc liball.a *.o
+# Iterate over all .c files in the current directory
+for file in *.c; do
+  # Compile the .c file into an object file
+  gcc -c "$file"
+  # Add the object file to the library
+
+done
