@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Create an empty archive file
-ar rcs liball.a
+# make object file with all the file end with .c
+gcc -c *.c
 
-# Iterate over all .c files in the current directory
-for file in *.c; do
-  # Compile the .c file into an object file
-  gcc -c "$file"
-  # Add the object file to the library
-  ar rcs liball.a "${file%.c}.o"
+#make the static library will all the object file in the current directory
+ar -rc liball.a *.o
 
-done
+#index it
+ranlib liball.a
