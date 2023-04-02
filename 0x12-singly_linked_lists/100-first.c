@@ -2,7 +2,7 @@
 
 /**
  * bmain - function executed before main
- * Return: no return.
+ * Return: Nothing.
  */
 
 void __attribute__ ((constructor)) bmain()
