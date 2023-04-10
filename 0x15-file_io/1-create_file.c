@@ -10,7 +10,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fdopen, fdw, len = 0;
+	int fdw, fdopen, len = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -22,9 +22,12 @@ int create_file(const char *filename, char *text_content)
 	while (text_content && *(text_content + len))
 		len++;
 
-	fdw = write(fdo, text_content, len);
+	fdw = write(fdopen, text_content, len);
+
 	close(fdopen);
+
 	if (fdw < 0)
 		return (-1);
+
 	return (1);
 }
